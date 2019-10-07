@@ -1,6 +1,6 @@
 ## Css responsive
 
-### Deadline 11.10
+### Deadline 14.10
 
 Надо сверстать адаптивно в 2 вариантах:
 
