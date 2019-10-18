@@ -1,0 +1,159 @@
+/* --- FLEX --- */
+.flex {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    }
+
+.flex-row {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    }
+
+.flex-column {
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+}
+
+/*--- TOOLS ---*/
+.block {
+    display: inline;
+}
+/* --- MAIN --- */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 24px;
+    height: 512px;
+
+}
+
+.parent {
+    margin: auto;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: 1.2s;
+}
+
+.box-half {
+    height: 100px;
+}
+
+.box-quater {
+    height: 100px;
+    width: 50px;
+}
+
+/* --- TEXT --- */
+.text {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    font-family: Calibri;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.text-small{
+    margin-top: 8px;
+    font-size: 12px;
+}
+/* --- IMG ---*/
+img {
+    width: 101px;
+    height: 101px;
+    display: block;
+    margin: auto;
+}
+.img-small {
+    height: 40px;
+    width: 40px;
+}
+
+/* --- COLORS ---*/
+.color-red {
+    background: #e55679;
+}
+
+.color-lightblue {
+    background: #00c0e2;
+}
+
+.color-indigo {
+    background: #7558f8;
+}
+
+.color-green {
+    background: #5ad998;
+}
+
+.color-orange {
+    background: #e9c14d;
+}
+
+.color-purple {
+    background: #ca70d6;
+}
+
+.color-maroon {
+    background: #c84b6a;
+}
+
+/* -- MEDIA -- */
+@media only screen and (max-width: 782px){
+    .flex-row {
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+    }
+    .flex-column {
+        flex-direction: row;
+        -webkit-box-orient: horizontal;
+    }
+
+    img {
+        height: 30%;
+        width: 30%;
+    }
+    .box {
+        height: 150px;
+        width: 150px;
+    }
+    .text {
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        font-family: Calibri;
+        text-align: center;
+        margin-top: 24px;
+
+    }
+    .box-half {
+        height: 75px;
+    }
+    .box-quater {
+        height: 75px;
+        width: 37.5px;
+    }
+    .img-small {
+        height: 20px;
+        width: 20px;
+    }
+    .text-small{
+        margin-top: 6px;
+        font-size: 12px;
+    }
+    #wind {
+        height: 75px;
+        width: 75px;
+    }
+}
